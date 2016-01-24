@@ -13,7 +13,7 @@
           fetch="https://github.com/BlissRoms"
           review="review.blissroms.com" />
           
-  <remote name="BlissRoms"
+  <remote name="BlissRoms-Devices"
           fetch="https://github.com/BlissRoms-Devices" />
 
   <remote name="elite"
