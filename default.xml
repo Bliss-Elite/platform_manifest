@@ -13,6 +13,18 @@
           fetch="https://github.com/BlissRoms"
           review="review.blissroms.com" />
           
+  <remote name="BlissRoms"
+          fetch="https://github.com/BlissRoms-Devices" />
+
+  <remote name="elite"
+           fetch="https://github.com/Elite-Kernels/" />
+
+  <remote name="Bliss-Elite"
+           fetch="https://github.com/Bliss-Elite/" />
+ 
+  <remote name="linaro"
+           fetch="https://github.com/Christopher83/" />
+
   <remote name="BlissRoms-Devices"
           fetch="https://github.com/BlissRoms-Devices" />
 
@@ -29,11 +41,11 @@
            sync-j="4" />
 
 <!-- BEGIN BLISS -->
-  <project path="build" name="platform_build" remote="BlissRoms" revision="mm6.0" >
+  <project path="build" name="platform_build" remote="Bliss-Elite" revision="mm-elite" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="manifest" name="platform_manifest" remote="BlissRoms" revision="mm6.0" />
-  <project path="art" name="platform_art" remote="BlissRoms" revision="mm6.0" />
+  <project path="manifest" name="platform_manifest" remote="Bliss-Elite" revision="mm-elite" />
+  <project path="art" name="android_art" remote="elite" revision="m" />
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="BlissRoms" revision="mm6.0" />
   <project path="external/busybox" name="platform_external_busybox" remote="BlissRoms" revision="mm6.0" />
   <project path="external/chromium-webview" name="platform_external_chromium-webview" clone-depth="1" remote="BlissRoms" revision="mm6.0" />
@@ -55,7 +67,7 @@
 
 <!-- BEGIN CYANOGENMOD -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="elite" revision="mm" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" revision="marshmallow-cts-release" remote="aosp" />
   <project path="development" name="CyanogenMod/android_development" groups="pdk-cw-fs,pdk-fs" />
@@ -585,6 +597,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-linaro" name="UBERTC/arm-eabi-5.2" remote="bitbucket" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-linaro" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linaro-4.9.4" name="arm-cortex_a15-linux-gnueabihf-linaro_4.9" groups="pdk,linux,arm" remote="linaro" revision="master" /> 
   <!-- END TOOLCHAINS -->  
   
 </manifest>
