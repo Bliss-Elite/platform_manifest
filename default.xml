@@ -591,10 +591,9 @@
   
   <!-- LINARO KERNEL TOOLCHAINS -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-linaro" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="arm-cortex_a15-linux-gnueabihf-linaro_4.9" groups="pdk,linux,arm" remote="linaro" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-linaro" name="UBERTC/arm-eabi-5.2" remote="bitbucket" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-linaro" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master" />
-  <project path="prebuilts/gcc/linaro-4.9.4" name="arm-cortex_a15-linux-gnueabihf-linaro_4.9" groups="pdk,linux,arm" remote="linaro" revision="master" /> 
   <!-- END TOOLCHAINS -->  
   
 </manifest>
